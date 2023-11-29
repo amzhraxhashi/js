@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="invoice.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <section class="invoice-container">
+          <form>
+               <div class="groups-container">                 
+                    <div class="input-group">
+                         <textarea rows="10" class="description" placeholder="Description" required></textarea>
+                         <input type="text" class="quantity" placeholder="Quantity" required>
+                         <input type="text" class="price" placeholder="Price" required>
+                         <input type="text" class="total" readonly ="Total" required>
+                    </div>
+               </div>
+               <div class="buttons">
+                    <div class="add-btn-container">
+                         <button id="add-btn">Add item</button>
+                    </div>
+                    <div class="submit-container">
+                         <input type="submit" value="Submit invoice">
+                    </div>
+               </div>
+          </form>
+          <div class="results-container">
+               <h4 class="initial-total">Ksh 7,000</h4>
+               <h4 class="tax-amount">Ksh 760</h4>
+               <h4 class="grand-total">Ksh 7,760</h4>
+          </div>
+     </section>
+
+     <script src="invoice.js"></script>
+</body>
+</html>

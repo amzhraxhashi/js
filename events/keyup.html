@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .message-container{
+               width: 300px;
+               box-shadow: 0 0 3px grey;
+               padding: 20px;
+          }
+          .message-input{
+               width: 100%;
+               padding: 10px;
+          }
+          .message{
+               margin-top: 15px;
+          }
+
+          .color-container{
+               width: 100%;
+               box-shadow: 0 0 3px grey;
+               padding: 20px;
+               margin: 50px 0;
+          }
+          .color-input{
+               width: 100%;
+               padding: 10px;
+          }
+
+          .color-container p{
+               margin-top: 20px;
+               padding: 20px;
+          }
+     </style>
+</head>
+<body>
+     <div class="message-container">
+          <form>
+               <input type="text" class="message-input">
+          </form>
+          <div class="message"></div>
+     </div>
+
+     <div class="color-container">
+          <form>
+               <input type="text" class="color-input">
+          </form>
+          <p>
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ducimus. Temporibus adipisci architecto illum atque quos repellat quo eum veritatis dicta placeat voluptatibus sint, sed omnis exercitationem. Vitae, facilis ex?
+          </p>
+     </div>
+
+     <script>
+          // ex 1
+          let messageInput = document.querySelector('.message-input')
+          let message = document.querySelector('.message')
+          messageInput.addEventListener('keyup', function(){
+               message.innerHTML = messageInput.value
+          })
+
+          // ex 2
+          let colorInput = document.querySelector('.color-input')
+          let colorContainer = document.querySelector('.color-container')
+          colorInput.addEventListener('keyup', function(){
+               colorContainer.style.backgroundColor = colorInput.value
+          })
+     </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          *{
+               padding: 0;
+               margin: 0;
+               box-sizing: border-box;
+          }
+          .students-container{
+               display: flex;
+               justify-content: space-between;
+               flex-wrap: wrap;
+          }
+          .students-container div{
+               flex-basis: 23%;
+               margin-bottom: 20px;
+               padding: 20px;
+               box-shadow: 0 0 4px grey;
+          }
+          .students-container div p{
+               line-height: 1.5;
+          }
+     </style>
+</head>
+<body>
+     <div class="students-container"></div>
+     <script src="object.js"></script>
+</body>
+</html>

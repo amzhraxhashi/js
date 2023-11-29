@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     list-style: none;
+     text-decoration: none;
+     transition: .5s;
+}
+
+/* Header */
+header{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.logo{
+     font-family: 'Alex Brush', cursive;
+     font-size: 45px;
+     color: brown;
+}
+header nav ul{
+     display: flex;
+}
+header nav ul li {
+     padding: 15px;
+     filter: blur(2px);
+}
+header nav ul li:hover{
+     filter: blur(0);
+     transform: scale(1.2);
+}
+header nav ul li a{
+     color: brown;
+}
+
+/* Hero container */
+.hero-container{
+     display: flex;
+     justify-content: space-around;
+     padding: 50px 0;
+}
+.hero-content{
+     max-width: 400px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+.hero-content h1{
+     font-size: 40px;
+}
+.hero-content p{
+     line-height: 1.5;
+     margin-top: 10px;
+}
+.hero-content a{
+     border: 2px solid brown;
+     padding: 10px 30px;
+     color: brown;
+     margin-top: 10px;
+}
+.hero-content a:hover{
+     background-color: brown;
+     color: white;
+}
+.hero-image{
+     max-width: 500px;
+     height: 500px;
+     position: relative;
+}
+.hero-image img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     filter:  grayscale(100%);
+}
+.hero-image::before{
+     position: absolute;
+     content: "";
+     width: 500px;
+     height: 500px;
+     border: 2px solid black;
+     left: -30px;
+     top: -30px;
+     transition: .5s;
+}
+.hero-image:hover img{
+     filter: grayscale(0);
+}
+.hero-image:hover::before{
+     border: 2px solid brown;
+}
+
+/* Menu */
+.menu-container{
+     background-image: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.7)), url("../images/res2.jpeg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 100px;
+}
+.menu-container h2{
+     color: white;
+     text-align: center;
+}
+.menus{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-bottom: 20px;
+}
+.menu-item{
+     background-color: white;
+     flex-basis: 450px;
+     display: flex;
+     align-items: center;
+     margin-top: 20px;
+}
+.item-img{
+     flex-basis: 200px;
+     height: 150px;
+}
+.item-img img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+.item-content{
+     margin-left: 20px;
+}
+.item-name{
+     font-size: 18px;
+     font-weight: bold;
+}
+.item-price{
+     font-size: 25px;
+     color: brown;
+     font-family: 'Alex Brush', cursive;
+}
+.item-category{
+     font-style: italic;
+     color: rgb(146, 146, 146);
+     text-transform: capitalize;
+}
+.btns-container{
+     text-align: center;
+     margin-top: 20px;
+   }
+.btns-container button{
+     padding: 10px 20px;
+     background-color: brown;
+     color: white;
+     border: none;
+     cursor: pointer;
+     border-radius: 2px;
+     margin: 0 5px;
+}
